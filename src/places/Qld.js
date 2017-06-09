@@ -42,7 +42,7 @@ class Qld extends Component {
             open={this.state.open}
             onRequestChange={(open) => this.setState({open})}
           >
-            <MenuItem onTouchTap={this.handleClose}><Link to="./" activeClassName="activeNav">Home</Link></MenuItem>
+            <MenuItem onTouchTap={this.handleClose}><Link to="../" activeClassName="activeNav">Home</Link></MenuItem>
             <MenuItem onTouchTap={this.handleClose}><Link to="/places/nsw" activeClassName="activeNav">New South Wales</Link></MenuItem>
             <MenuItem onTouchTap={this.handleClose}><Link to="/places/vic" activeClassName="activeNav">Victoria</Link></MenuItem>
             <MenuItem onTouchTap={this.handleClose}><Link to="/places/sa" activeClassName="activeNav">South Australia</Link></MenuItem>
