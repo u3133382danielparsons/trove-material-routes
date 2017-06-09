@@ -40,7 +40,7 @@ export default class App extends Component {
               onRequestChange={(open) => this.setState({open})}
             >
               <MenuItem onTouchTap={this.handleClose}><Link to="/" activeClassName="activeNav">Home</Link></MenuItem>
-              <MenuItem onTouchTap={this.handleClose}><Link to="/places/nsw" activeClassName="activeNav" onClick={console.log(window.location)}>New South Wales</Link></MenuItem>
+              <MenuItem onTouchTap={this.handleClose}><Link to="/places/nsw" activeClassName="activeNav">New South Wales</Link></MenuItem>
               <MenuItem onTouchTap={this.handleClose}><Link to="/vic" activeClassName="activeNav">Victoria</Link></MenuItem>
               <MenuItem onTouchTap={this.handleClose}><Link to="/sa" activeClassName="activeNav">South Australia</Link></MenuItem>
               <MenuItem onTouchTap={this.handleClose}><Link to="/qld" activeClassName="activeNav">Queensland</Link></MenuItem>
