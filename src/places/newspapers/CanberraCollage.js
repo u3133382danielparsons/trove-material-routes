@@ -8,18 +8,12 @@ import Drawer from 'material-ui/Drawer'
 import MenuItem from 'material-ui/MenuItem'
 import { Link } from 'react-router-dom'
 import Subheader from 'material-ui/Subheader'
-import canberraTimes from './images/canberraTimes.svg'
-import woroni from './images/woroni.png'
-import goodNeighbour from './images/The_Good_Neighbour.png'
-import canberraCommunity from './images/Canberra_community.png'
-import federalPioneer from './images/federal_pioneer.png'
-import canberraIllustrated from './images/canberra_illustrated.png'
-import canberraCollage from './images/canberra_collage.png'
-import List from 'material-ui/List/List'
-import ListItem from 'material-ui/List/ListItem'
-import Avatar from 'material-ui/Avatar'
+import Paper from 'material-ui/Paper';
+import canberraCollage from './images/canberra_coll_art.png'
+import canberraCollPic from './images/canberra_coll_pic.png'
 
-class Act extends Component {
+
+class CanberraCollage extends Component {
   constructor(props) {
     super(props)
     this.state = {open: false}
@@ -34,7 +28,6 @@ class Act extends Component {
       textAlign: 'center',
       display: 'inline-block',
     };
-
     return(
       <div>
       <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
@@ -51,7 +44,7 @@ class Act extends Component {
             open={this.state.open}
             onRequestChange={(open) => this.setState({open})}
           >
-            <MenuItem onTouchTap={this.handleClose}><Link to="../" activeClassName="activeNav">Home</Link></MenuItem>
+            <MenuItem onTouchTap={this.handleClose}><Link to="../../" activeClassName="activeNav">Home</Link></MenuItem>
             <MenuItem onTouchTap={this.handleClose}><Link to="/places/nsw" activeClassName="activeNav">New South Wales</Link></MenuItem>
             <MenuItem onTouchTap={this.handleClose}><Link to="/places/vic" activeClassName="activeNav">Victoria</Link></MenuItem>
             <MenuItem onTouchTap={this.handleClose}><Link to="/places/sa" activeClassName="activeNav">South Australia</Link></MenuItem>
@@ -65,38 +58,18 @@ class Act extends Component {
           </Drawer>
       </MuiThemeProvider>
       <MuiThemeProvider>
-        <Subheader>Australian Capital Territory</Subheader>
+        <Subheader>Canberra University Collage Student Notes (1947 - 1950)</Subheader>
       </MuiThemeProvider>
       <MuiThemeProvider>
-
-        <List>
-         <ListItem disabled={true}>
-           <img src={canberraTimes} alt="canberraTimes" />
-         </ListItem>
-         <ListItem disabled={true}>
-           <img src={woroni} alt="woroni" />
-         </ListItem>
-         <ListItem disabled={true}>
-           <img src={goodNeighbour} alt="Good Neighbour A.C.T." />
-         </ListItem>
-         <ListItem disabled={true}>
-           <img src={canberraCommunity} alt="Canberra Community News" />
-         </ListItem>
-         <ListItem disabled={true}>
-           <img src={federalPioneer} alt="The Federal Pioneer" />
-         </ListItem>
-         <ListItem disabled={true}>
-           <Link to="./newspapers/canberraIllustrated" activeClassName="activeNav"><img src={canberraIllustrated} alt="The Canberra Illustrated" /></Link>
-         </ListItem>
-         <ListItem disabled={false}>
-           <Link to="./newspapers/canberraCollage" activeClassName="activeNav"><img src={canberraCollage} alt="The Canberra Illustrated" /></Link>
-         </ListItem>
-        </List>
+        <img src={canberraCollage} alt="Canberra Collage Article" />
       </MuiThemeProvider>
-
+      <MuiThemeProvider>
+        <img src={canberraCollPic} alt="Canberra Collage Article" />
+      </MuiThemeProvider>
     </div>
     )
   }
 }
 
-export default Act
+
+export default CanberraCollage

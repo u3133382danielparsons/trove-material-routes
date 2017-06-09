@@ -13,6 +13,8 @@ import Act from './places/Act'
 import Nt from './places/Nt'
 import Nat from './places/Nat'
 import All from './places/All'
+import CanberraCollage from './places/newspapers/CanberraCollage'
+import CanberraIllustrated from './places/newspapers/CanberraIllustrated'
 import registerServiceWorker from './registerServiceWorker'
 import './index.css'
 
@@ -32,6 +34,8 @@ ReactDOM.render(
       <Route path='/places/nt' component={Nt}/>
       <Route path='/places/Nat' component={Nat}/>
       <Route path='/places/all' component={All}/>
+      <Route path='/places/newspapers/canberraCollage' component={CanberraCollage}/>
+      <Route path='/places/newspapers/canberraIllustrated' component={CanberraIllustrated}/>
     </div>
     </Switch>,
   root
