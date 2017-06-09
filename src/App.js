@@ -7,19 +7,19 @@ import injectTapEventPlugin from 'react-tap-event-plugin'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import AppBar from 'material-ui/AppBar'
 import Drawer from 'material-ui/Drawer'
-import RaisedButton from 'material-ui/RaisedButton'
-import MenuItem from 'material-ui/MenuItem';
+import Subheader from 'material-ui/Subheader'
+import MenuItem from 'material-ui/MenuItem'
+import { Link } from 'react-router-dom'
 
-injectTapEventPlugin()
+
 export default class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {open: false};
+    this.state = {open: false}
   }
+  handleToggle = () => this.setState({open: !this.state.open})
 
-  handleToggle = () => this.setState({open: !this.state.open});
-
-  handleClose = () => this.setState({open: false});
+  handleClose = () => this.setState({open: false})
 
   render() {
     return(
@@ -39,17 +39,22 @@ export default class App extends Component {
               open={this.state.open}
               onRequestChange={(open) => this.setState({open})}
             >
-              <MenuItem onTouchTap={this.handleClose}>New South Wales</MenuItem>
-              <MenuItem onTouchTap={this.handleClose}>Victoria</MenuItem>
-              <MenuItem onTouchTap={this.handleClose}>South Australia</MenuItem>
-              <MenuItem onTouchTap={this.handleClose}>Queensland</MenuItem>
-              <MenuItem onTouchTap={this.handleClose}>Western Australia</MenuItem>
-              <MenuItem onTouchTap={this.handleClose}>Tasmania</MenuItem>
-              <MenuItem onTouchTap={this.handleClose}>A.C.T.</MenuItem>
-              <MenuItem onTouchTap={this.handleClose}>Northern Territory</MenuItem>
-              <MenuItem onTouchTap={this.handleClose}>National/International</MenuItem>
+              <MenuItem onTouchTap={this.handleClose}><Link to="/" activeClassName="activeNav">Home</Link></MenuItem>
+              <MenuItem onTouchTap={this.handleClose}><Link to="/places/nsw" activeClassName="activeNav" onClick={console.log(window.location)}>New South Wales</Link></MenuItem>
+              <MenuItem onTouchTap={this.handleClose}><Link to="/vic" activeClassName="activeNav">Victoria</Link></MenuItem>
+              <MenuItem onTouchTap={this.handleClose}><Link to="/sa" activeClassName="activeNav">South Australia</Link></MenuItem>
+              <MenuItem onTouchTap={this.handleClose}><Link to="/qld" activeClassName="activeNav">Queensland</Link></MenuItem>
+              <MenuItem onTouchTap={this.handleClose}><Link to="/wa" activeClassName="activeNav">Western Australia</Link></MenuItem>
+              <MenuItem onTouchTap={this.handleClose}><Link to="/tas" activeClassName="activeNav">Tasmania</Link></MenuItem>
+              <MenuItem onTouchTap={this.handleClose}><Link to="/act" activeClassName="activeNav">Australian Capital Territory</Link></MenuItem>
+              <MenuItem onTouchTap={this.handleClose}><Link to="/nt" activeClassName="activeNav">Northern Territory</Link></MenuItem>
+              <MenuItem onTouchTap={this.handleClose}><Link to="/nat" activeClassName="activeNav">National/International</Link></MenuItem>
+              <MenuItem onTouchTap={this.handleClose}><Link to="/all" activeClassName="activeNav">All Newspapers</Link></MenuItem>
             </Drawer>
           </div>
+        </MuiThemeProvider>
+        <MuiThemeProvider>
+          <Subheader>Home</Subheader>
         </MuiThemeProvider>
       </div>
 
