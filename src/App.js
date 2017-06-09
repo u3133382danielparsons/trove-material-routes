@@ -23,8 +23,8 @@ const style = {
       </MuiThemeProvider>
       <MuiThemeProvider>
       <RaisedButton label="Test Button"
-                    onMouseUp={()=>{alert('Raised Button Works!')}}
-                    onTouchEnd={()=>{alert('Raised Button Works!')}}
+                    onMouseUp={()=>{alert('Mouse Raised Button Works!')}}
+                    onTouchEnd={()=>{alert('Tap Raised Button Works!')}}
                     primary={true}
       />
       </MuiThemeProvider>
