@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
+import logo from '../../images/logo.png'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme'
-import injectTapEventPlugin from 'react-tap-event-plugin'
-import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import AppBar from 'material-ui/AppBar'
 import Drawer from 'material-ui/Drawer'
 import MenuItem from 'material-ui/MenuItem'
@@ -23,13 +21,19 @@ class CanberraCollage extends Component {
   handleClose = () => this.setState({open: false});
 
     render() {
+      const styles = {
+          appBar: {
+          background: '#000000',
+        }
+      }
       return(
         <div>
-          <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
+          <MuiThemeProvider>
             <AppBar
-              title="Trove Newspapers"
+              style={styles.appBar}
               iconClassNameRight="muidocs-icon-navigation-expand-more"
               onTouchTap={this.handleToggle}
+              iconElementRight={<img src={logo} alt="Trove Logo" />}
             />
           </MuiThemeProvider>
 

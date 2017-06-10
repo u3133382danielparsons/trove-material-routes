@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { HashRouter as Switch,Route,Link } from 'react-router-dom'
+import { HashRouter as Switch,Route } from 'react-router-dom'
 import injectTapEventPlugin from 'react-tap-event-plugin'
 
 import App from './App'
@@ -15,6 +15,12 @@ import Nt from './places/Nt'
 import Nat from './places/Nat'
 import All from './places/All'
 import CanberraTimes from './places/newspapers/CanberraTimes'
+import Barton from './places/newspapers/pms/Barton'
+import Deakin from './places/newspapers/pms/Deakin'
+import Watson from './places/newspapers/pms/Watson'
+import Reid from './places/newspapers/pms/Reid'
+import Fisher from './places/newspapers/pms/Fisher'
+import Cook from './places/newspapers/pms/Cook'
 import CanberraCollage from './places/newspapers/CanberraCollage'
 import CanberraIllustrated from './places/newspapers/CanberraIllustrated'
 import registerServiceWorker from './registerServiceWorker'
@@ -39,6 +45,12 @@ ReactDOM.render(
         <Route path='/places/newspapers/canberraTimes' component={CanberraTimes}/>
         <Route path='/places/newspapers/canberraCollage' component={CanberraCollage}/>
         <Route path='/places/newspapers/canberraIllustrated' component={CanberraIllustrated}/>
+        <Route path='/places/newspapers/pms/Barton' component={Barton}/>
+        <Route path='/places/newspapers/pms/Deakin' component={Deakin}/>
+        <Route path='/places/newspapers/pms/Watson' component={Watson}/>
+        <Route path='/places/newspapers/pms/Reid' component={Reid}/>
+        <Route path='/places/newspapers/pms/Fisher' component={Fisher}/>
+        <Route path='/places/newspapers/pms/Cook' component={Cook}/>
       </div>
     </Switch>,
   root
