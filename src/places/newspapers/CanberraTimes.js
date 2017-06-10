@@ -8,11 +8,14 @@ import Drawer from 'material-ui/Drawer'
 import MenuItem from 'material-ui/MenuItem'
 import { Link } from 'react-router-dom'
 import Subheader from 'material-ui/Subheader'
+import Avatar from 'material-ui/Avatar'
+import {List, ListItem} from 'material-ui/List'
+import Divider from 'material-ui/Divider'
+import CommunicationChatBubble from 'material-ui/svg-icons/communication/chat-bubble'
+import Barton from './images/barton.jpg'
 
-import {Card, CardHeader, CardText} from 'material-ui/Card';
-import canberraIllustratedSocial from './images/can_illustrated_social.png'
 
-class CanberraIllustrated extends Component {
+class CanberraTimes extends Component {
 
   constructor(props) {
     super(props)
@@ -24,7 +27,6 @@ class CanberraIllustrated extends Component {
 
     render() {
       return(
-
         <div>
           <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
             <AppBar
@@ -56,57 +58,23 @@ class CanberraIllustrated extends Component {
           </MuiThemeProvider>
 
           <MuiThemeProvider>
-            <Subheader>Canberra University Collage Student Notes (1947 - 1950)</Subheader>
+            <Subheader>The Canberra Times</Subheader>
           </MuiThemeProvider>
 
           <MuiThemeProvider>
-            <img src={canberraIllustratedSocial} alt="Canberra Collage Article" />
-          </MuiThemeProvider>
-
-          <MuiThemeProvider>
-            <Card>
-               <CardHeader title="THE SOCIAL SCALE." />
-               <CardText>
-                 Will Canberra some day be known as
-                 the city of snobs? At the present the
-                 signs are here. First we have the
-                 "guests" at the Hotel Canberra, then the
-                 denizens of Acton and so on through
-                 Blanfordia, Eastlake, Westlake, the Hotel
-                 Ainslie, down to thc Causeway and Mo-
-                 longlo and the tradesmen's messes, until
-                 we finally reach the labourers' camps at
-                 Eastlake and Civic Centre, and the home
-                 of the lost and outcast No. 1.
-                 Most of this feeling is caused through
-                 the different communities being widely
-                 separated, and through there being no
-                 common meeting ground (such as amuse-
-                 ment halls, lectures, etc.), where different
-                 communities could mingle and exchange
-                 ideas. Some of this snobbishness, how-
-                 ever, is fostered. Take the Hotel Ains-
-                 lie, for instance. At this hotel members
-                 of the staff are accommodated at a con-
-                 siderably lower figure than anyone else,
-                 skilled artisans are not welcomed, and
-                 as for the labourer, "it is easier for a
-                 camel to go through the eye of a needle.*'
-                 But there may not be any cause to
-                 worry about the future, for when the city
-                 has a population of, say, ten thousand, a
-                 great percentage of them will have, for-
-                 tunately, what one writer describes as
-                 "the Australian characteristic of irrever-
-                 ence." They will have the great gift
-                 of hum our in which atmosphere snob-
-                 Fix this textbery dies.
-               </CardText>
-             </Card>
+            <List>
+              <Subheader>Australian Prime Ministers</Subheader>
+              <ListItem
+                primaryText={<h3>Edmund Barton</h3>}
+                secondaryText={<p>&quot;It is the duty of the State to educate, and the right of the people to demand education.&quot;</p>}
+                leftAvatar={<Avatar src={Barton} />}
+                rightIcon={<CommunicationChatBubble />}
+              />
+            </List>
           </MuiThemeProvider>
       </div>
     )
   }
 }
 
-export default CanberraIllustrated
+export default CanberraTimes
