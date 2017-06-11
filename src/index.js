@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { HashRouter as Switch,Route } from 'react-router-dom'
 import injectTapEventPlugin from 'react-tap-event-plugin'
-
 import App from './App'
 import Nsw from './places/Nsw'
 import Vic from './places/Vic'
@@ -48,11 +47,13 @@ import Turnbull from './places/newspapers/pms/Turnbull'
 import CanberraCollage from './places/newspapers/CanberraCollage'
 import CanberraIllustrated from './places/newspapers/CanberraIllustrated'
 import registerServiceWorker from './registerServiceWorker'
-import './index.css'
+import './styles/index.css'
 
 const root = document.getElementById('root')
 injectTapEventPlugin()
 ReactDOM.render(
+  <div>
+
   <Switch>
       <div>
         <Route exact path='/' component={App}/>
@@ -65,7 +66,7 @@ ReactDOM.render(
         <Route path='/places/act' component={Act}/>
         <Route path='/places/nt' component={Nt}/>
         <Route path='/places/Nat' component={Nat}/>
-        <Route path='/places/all' component={All}/>
+        <Route path='/places/all' component={All} />
         <Route path='/places/newspapers/canberraTimes' component={CanberraTimes}/>
         <Route path='/places/newspapers/canberraCollage' component={CanberraCollage}/>
         <Route path='/places/newspapers/canberraIllustrated' component={CanberraIllustrated}/>
@@ -99,7 +100,7 @@ ReactDOM.render(
         <Route path='/places/newspapers/pms/Abbot' component={Abbot}/>
         <Route path='/places/newspapers/pms/Turnbull' component={Turnbull}/>
       </div>
-    </Switch>,
+    </Switch></div>,
   root
 );
 registerServiceWorker();
