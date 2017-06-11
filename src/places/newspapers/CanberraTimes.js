@@ -149,156 +149,156 @@ class CanberraTimes extends Component {
                 leftAvatar={<Avatar src={Fisher} />}
                 rightIcon={<ActionInfo />}
               /></Link>
-              <ListItem
+              <Link to="./pms/Hughes" activeClassName="activeNav"><ListItem
                 primaryText={<h3>Billy Hughes</h3>}
                 secondaryText={<p>27 October 1915 to 9 February 1923</p>}
                 leftAvatar={<Avatar src={Hughes} />}
                 rightIcon={<ActionInfo />}
-              />
-              <ListItem
+              /></Link>
+              <Link to="./pms/Bruce" activeClassName="activeNav"><ListItem
                 primaryText={<h3>Stanley Bruce</h3>}
                 secondaryText={<p>9 February 1923 to 22 October 1929</p>}
                 leftAvatar={<Avatar src={Bruce} />}
                 rightIcon={<ActionInfo />}
-              />
-              <ListItem
+              /></Link>
+              <Link to="./pms/Scullin" activeClassName="activeNav"><ListItem
                 primaryText={<h3>James Scullin</h3>}
                 secondaryText={<p>22 October 1929 to 6 January 1932</p>}
                 leftAvatar={<Avatar src={Scullin} />}
                 rightIcon={<ActionInfo />}
-              />
-              <ListItem
+              /></Link>
+              <Link to="./pms/Lyons" activeClassName="activeNav"><ListItem
                 primaryText={<h3>Joseph Lyons</h3>}
                 secondaryText={<p>6 January 1932 to 7 April 1939</p>}
                 leftAvatar={<Avatar src={Lyons} />}
                 rightIcon={<ActionInfo />}
-              />
-              <ListItem
+              /></Link>
+              <Link to="./pms/Page" activeClassName="activeNav"><ListItem
                 primaryText={<h3>Sir Earle Page</h3>}
                 secondaryText={<p>7 April 1939 to 26 April 1939</p>}
                 leftAvatar={<Avatar src={Page} />}
                 rightIcon={<ActionInfo />}
-              />
-              <ListItem
+              /></Link>
+              <Link to="./pms/Menzies" activeClassName="activeNav"><ListItem
                 primaryText={<h3>Robert Menzies</h3>}
                 secondaryText={<p>26 April 1939 to 28 August 1941</p>}
                 leftAvatar={<Avatar src={Menzies} />}
                 rightIcon={<ActionInfo />}
-              />
-              <ListItem
+              /></Link>
+              <Link to="./pms/Fadden" activeClassName="activeNav"><ListItem
                 primaryText={<h3>Arthur Fadden</h3>}
                 secondaryText={<p>28 August 1941 to 7 October 1941</p>}
                 leftAvatar={<Avatar src={Fadden} />}
                 rightIcon={<ActionInfo />}
-              />
-              <ListItem
+              /></Link>
+              <Link to="./pms/Curtin" activeClassName="activeNav"><ListItem
                 primaryText={<h3>John Curtin</h3>}
                 secondaryText={<p>7 October 1941 to 5 July 1945</p>}
                 leftAvatar={<Avatar src={Curtin} />}
                 rightIcon={<ActionInfo />}
-              />
-              <ListItem
+              /></Link>
+              <Link to="./pms/Forde" activeClassName="activeNav"><ListItem
                 primaryText={<h3>Frank Forde</h3>}
                 secondaryText={<p>6 July 1945 to 13 July 1945</p>}
                 leftAvatar={<Avatar src={Forde} />}
                 rightIcon={<ActionInfo />}
-              />
-              <ListItem
+              /></Link>
+              <Link to="./pms/Chifley" activeClassName="activeNav"><ListItem
                 primaryText={<h3>Ben Chifley</h3>}
                 secondaryText={<p>13 July 1945 to 19 December 1949</p>}
                 leftAvatar={<Avatar src={Chifley} />}
                 rightIcon={<ActionInfo />}
-              />
-              <ListItem
+              /></Link>
+              <Link to="./pms/Menzies" activeClassName="activeNav"><ListItem
                 primaryText={<h3>Sir Robert Menzies</h3>}
                 secondaryText={<p>19 December 1949 to 26 January 1966</p>}
                 leftAvatar={<Avatar src={Menzies} />}
                 rightIcon={<ActionInfo />}
-              />
-              <ListItem
+              /></Link>
+              <Link to="./pms/Holt" activeClassName="activeNav"><ListItem
                 primaryText={<h3>Harold Holt</h3>}
                 secondaryText={<p>26 January 1966 to 19 December 1967</p>}
                 leftAvatar={<Avatar src={Holt} />}
                 rightIcon={<ActionInfo />}
-              />
-              <ListItem
+              /></Link>
+              <Link to="./pms/McEwen" activeClassName="activeNav"><ListItem
                 primaryText={<h3>John McEwen</h3>}
                 secondaryText={<p>19 December 1967 to 10 January 1968</p>}
                 leftAvatar={<Avatar src={McEwen} />}
                 rightIcon={<ActionInfo />}
-              />
-              <ListItem
+              /></Link>
+              <Link to="./pms/Gorton" activeClassName="activeNav"><ListItem
                 primaryText={<h3>John Gorton</h3>}
                 secondaryText={<p>10 January 1968 to 10 March 1971</p>}
                 leftAvatar={<Avatar src={Gorton} />}
                 rightIcon={<ActionInfo />}
-              />
-              <ListItem
+              /></Link>
+              <Link to="./pms/McMahon" activeClassName="activeNav"><ListItem
                 primaryText={<h3>William McMahon</h3>}
                 secondaryText={<p>10 March 1971 to 5 December 1972</p>}
                 leftAvatar={<Avatar src={McMahon} />}
                 rightIcon={<ActionInfo />}
-              />
-              <ListItem
+              /></Link>
+              <Link to="./pms/Whitlam" activeClassName="activeNav"><ListItem
                 primaryText={<h3>Gough Whitlam</h3>}
                 secondaryText={<p>5 December 1972 to 11 November 1975</p>}
                 leftAvatar={<Avatar src={Whitlam} />}
                 rightIcon={<ActionInfo />}
-              />
-              <ListItem
+              /></Link>
+              <Link to="./pms/Fraser" activeClassName="activeNav"><ListItem
                 primaryText={<h3>Malcolm Fraser</h3>}
                 secondaryText={<p>11 November 1975 to 11 March 1983</p>}
                 leftAvatar={<Avatar src={Fraser} />}
                 rightIcon={<ActionInfo />}
-              />
-              <ListItem
+              /></Link>
+              <Link to="./pms/Hawke" activeClassName="activeNav"><ListItem
                 primaryText={<h3>Bob Hawke</h3>}
                 secondaryText={<p>11 March 1983 to 20 December 1991</p>}
                 leftAvatar={<Avatar src={Hawke} />}
                 rightIcon={<ActionInfo />}
-              />
-              <ListItem
+              /></Link>
+              <Link to="./pms/Keating" activeClassName="activeNav"><ListItem
                 primaryText={<h3>Paul Keating</h3>}
                 secondaryText={<p>20 December 1991 to 11 March 1996</p>}
                 leftAvatar={<Avatar src={Keating} />}
                 rightIcon={<ActionInfo />}
-              />
-              <ListItem
+              /></Link>
+              <Link to="./pms/Howard" activeClassName="activeNav"><ListItem
                 primaryText={<h3>John Howard</h3>}
                 secondaryText={<p>11 March 1996 to 3 December 2007</p>}
                 leftAvatar={<Avatar src={Howard} />}
                 rightIcon={<ActionInfo />}
-              />
-              <ListItem
+              /></Link>
+              <Link to="./pms/Rudd" activeClassName="activeNav"><ListItem
                 primaryText={<h3>Kevin Rudd</h3>}
                 secondaryText={<p>3 December 2007 to 24 June 2010</p>}
                 leftAvatar={<Avatar src={Rudd} />}
                 rightIcon={<ActionInfo />}
-              />
-              <ListItem
+              /></Link>
+              <Link to="./pms/Gillard" activeClassName="activeNav"><ListItem
                 primaryText={<h3>Julia Gillard</h3>}
                 secondaryText={<p>24 June 2010 to 27 June 2013</p>}
                 leftAvatar={<Avatar src={Gillard} />}
                 rightIcon={<ActionInfo />}
-              />
-              <ListItem
+              /></Link>
+              <Link to="./pms/Rudd" activeClassName="activeNav"><ListItem
                 primaryText={<h3>Kevin Rudd</h3>}
                 secondaryText={<p>27 June 2013 to 18 September 2013</p>}
                 leftAvatar={<Avatar src={Rudd} />}
                 rightIcon={<ActionInfo />}
-              />
-              <ListItem
+              /></Link>
+              <Link to="./pms/Abbot" activeClassName="activeNav"><ListItem
                 primaryText={<h3>Tony Abbot</h3>}
                 secondaryText={<p>18 September 2013 to 15 September 2015</p>}
                 leftAvatar={<Avatar src={Abbot} />}
                 rightIcon={<ActionInfo />}
-              />
-              <ListItem
+              /></Link>
+              <Link to="./pms/Turnbull" activeClassName="activeNav"><ListItem
                 primaryText={<h3>Malcolm Turnbull</h3>}
                 secondaryText={<p>15 September 2015 / Incumbent</p>}
                 leftAvatar={<Avatar src={Turnbull} />}
                 rightIcon={<ActionInfo />}
-              />
+              /></Link>
             </List>
           </MuiThemeProvider>
       </div>

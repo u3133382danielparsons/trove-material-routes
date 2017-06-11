@@ -21,6 +21,30 @@ import Watson from './places/newspapers/pms/Watson'
 import Reid from './places/newspapers/pms/Reid'
 import Fisher from './places/newspapers/pms/Fisher'
 import Cook from './places/newspapers/pms/Cook'
+import Hughes from './places/newspapers/pms/Hughes'
+import Bruce from './places/newspapers/pms/Bruce'
+import Scullin from './places/newspapers/pms/Scullin'
+import Lyons from './places/newspapers/pms/Lyons'
+import Page from './places/newspapers/pms/Page'
+import Menzies from './places/newspapers/pms/Menzies'
+import Fadden from './places/newspapers/pms/Fadden'
+import Curtin from './places/newspapers/pms/Curtin'
+import Forde from './places/newspapers/pms/Forde'
+import Chifley from './places/newspapers/pms/Chifley'
+import Holt from './places/newspapers/pms/Holt'
+import McEwen from './places/newspapers/pms/McEwen'
+import Gorton from './places/newspapers/pms/Gorton'
+import McMahon from './places/newspapers/pms/McMahon'
+import Whitlam from './places/newspapers/pms/Whitlam'
+import Fraser from './places/newspapers/pms/Fraser'
+import Hawke from './places/newspapers/pms/Hawke'
+import Keating from './places/newspapers/pms/Keating'
+import Howard from './places/newspapers/pms/Howard'
+import Gillard from './places/newspapers/pms/Gillard'
+import Rudd from './places/newspapers/pms/Rudd'
+import Abbot from './places/newspapers/pms/Abbot'
+import Turnbull from './places/newspapers/pms/Turnbull'
+
 import CanberraCollage from './places/newspapers/CanberraCollage'
 import CanberraIllustrated from './places/newspapers/CanberraIllustrated'
 import registerServiceWorker from './registerServiceWorker'
@@ -51,6 +75,29 @@ ReactDOM.render(
         <Route path='/places/newspapers/pms/Reid' component={Reid}/>
         <Route path='/places/newspapers/pms/Fisher' component={Fisher}/>
         <Route path='/places/newspapers/pms/Cook' component={Cook}/>
+        <Route path='/places/newspapers/pms/Hughes' component={Hughes}/>
+        <Route path='/places/newspapers/pms/Bruce' component={Bruce}/>
+        <Route path='/places/newspapers/pms/Scullin' component={Scullin}/>
+        <Route path='/places/newspapers/pms/Lyons' component={Lyons}/>
+        <Route path='/places/newspapers/pms/Page' component={Page}/>
+        <Route path='/places/newspapers/pms/Menzies' component={Menzies}/>
+        <Route path='/places/newspapers/pms/Fadden' component={Fadden}/>
+        <Route path='/places/newspapers/pms/Curtin' component={Curtin}/>
+        <Route path='/places/newspapers/pms/Forde' component={Forde}/>
+        <Route path='/places/newspapers/pms/Chifley' component={Chifley}/>
+        <Route path='/places/newspapers/pms/Holt' component={Holt}/>
+        <Route path='/places/newspapers/pms/McEwen' component={McEwen}/>
+        <Route path='/places/newspapers/pms/Gorton' component={Gorton}/>
+        <Route path='/places/newspapers/pms/McMahon' component={McMahon}/>
+        <Route path='/places/newspapers/pms/Whitlam' component={Whitlam}/>
+        <Route path='/places/newspapers/pms/Fraser' component={Fraser}/>
+        <Route path='/places/newspapers/pms/Keating' component={Keating}/>
+        <Route path='/places/newspapers/pms/Hawke' component={Hawke}/>
+        <Route path='/places/newspapers/pms/Howard' component={Howard}/>
+        <Route path='/places/newspapers/pms/Gillard' component={Gillard}/>
+        <Route path='/places/newspapers/pms/Rudd' component={Rudd}/>
+        <Route path='/places/newspapers/pms/Abbot' component={Abbot}/>
+        <Route path='/places/newspapers/pms/Turnbull' component={Turnbull}/>
       </div>
     </Switch>,
   root

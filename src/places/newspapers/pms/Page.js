@@ -7,10 +7,9 @@ import MenuItem from 'material-ui/MenuItem'
 import { Link } from 'react-router-dom'
 import Subheader from 'material-ui/Subheader'
 import {Card, CardHeader, CardText} from 'material-ui/Card'
+import PageMorale from './images/pageMorale.png'
 
-import CookFuneral from './images/cookFuneral.png'
-
-class Cook extends Component {
+class Page extends Component {
 
   constructor(props) {
     super(props)
@@ -65,31 +64,40 @@ class Cook extends Component {
           </MuiThemeProvider>
 
           <MuiThemeProvider>
-            <Subheader>Prime Minister Joseph Cook</Subheader>
+            <Subheader>Prime Minister Sir Earl Page</Subheader>
           </MuiThemeProvider>
 
           <MuiThemeProvider>
-            <img src={CookFuneral} alt="Joseph Cook Funeral Article" />
+            <img src={PageMorale} alt="Sir Earl Page Article" />
           </MuiThemeProvider>
 
           <MuiThemeProvider>
             <Card>
               <CardHeader style={styles.cardHeader} title="" />
-               <CardHeader style={styles.cardHeader} title="FUNERAL OF SIR JOSEPH
-COOK" />
+               <CardHeader style={styles.cardHeader} title="BRITISH MORALE IMPRESSES
+Fix this textSIR EARL PAGE" />
                <CardText style={styles.cardText}>
-                  SYDNEY-, Friday.
-                  Government- and diplomatic representatives' were among the 500
-                  mourners at the State funeral of Sir
-                  Joseph Cook, former Prime Minister,'
-                  to-day.
-                  The Rev. W. Deane, Principal of
-                  the Methodist Ladies' College, Burwood, delivered the address at the
-                  Wesley Chapel. ',
-                  He said that Sir Joseph was an all
-                  Australian Lincoln, who,rose from a
-                  pit boy to be Prime Minister and set
-                  a magnificent example to all Australians.
+                  BRITISH MORALE IMPRESSES
+                  SIR EARL PAGE
+                  LONDON, Monday.
+                  ," , After a tour with the Prime Minister (Mr. Churchill/
+                  ,of the damaged areas in eastern England, Sir Earle, Page, W0
+                  is on a special mission to London for the Australian Govern*
+                  ment, paid a glowing tribute to the fighting spirit of the Brit-
+                  ish people and to Mr. Churchill's leadership. ".
+                  In an interview wiih the Austral- hit, This paradox has been made pos-,.
+                  ian Associated Press, Sir Earle Page siblc bv the rapid and1 nl»K0"lvul|t
+                  said that he had visited Ncwcastle-on- building, Some hoiries have been «u
+                  Tyne, Sheffield and Hull, - three times, , , .. _copIe
+                  , I was most Impressed with ihc-ef- "The-whole attitude of tne.p »
+                  fficioney oCflhe air raid procautions, leflcctcd' confidence fin Mr¿ «£ W.
+                  An organisation,, with 24 hours sor- to pull the nation through ltl^aes -
+                  vico seven /lays a week, is provided cities, The damage in "the ,lln!,
+                  to meet all contingencies at shoit no- visited was confined to r
+                  "«. , ' - houses and business centres,
+                  "Despite the fact that an area in than to key facloiios or Inaisp ,
+                  one'elly ^as said to have only 100,- shipping facilities."
+                  j_000 homes, at least 110,000 have been_
                </CardText>
              </Card>
           </MuiThemeProvider>
@@ -98,4 +106,4 @@ COOK" />
   }
 }
 
-export default Cook
+export default Page

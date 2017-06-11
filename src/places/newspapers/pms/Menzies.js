@@ -7,10 +7,9 @@ import MenuItem from 'material-ui/MenuItem'
 import { Link } from 'react-router-dom'
 import Subheader from 'material-ui/Subheader'
 import {Card, CardHeader, CardText} from 'material-ui/Card'
+import MenziesReturn from './images/menziesReturn.png'
 
-import CookFuneral from './images/cookFuneral.png'
-
-class Cook extends Component {
+class Menzies extends Component {
 
   constructor(props) {
     super(props)
@@ -65,31 +64,40 @@ class Cook extends Component {
           </MuiThemeProvider>
 
           <MuiThemeProvider>
-            <Subheader>Prime Minister Joseph Cook</Subheader>
+            <Subheader>Prime Minister Sir Robert Menzies</Subheader>
           </MuiThemeProvider>
 
           <MuiThemeProvider>
-            <img src={CookFuneral} alt="Joseph Cook Funeral Article" />
+            <img src={MenziesReturn} alt="Sir Robert Menzies Article" />
           </MuiThemeProvider>
 
           <MuiThemeProvider>
             <Card>
               <CardHeader style={styles.cardHeader} title="" />
-               <CardHeader style={styles.cardHeader} title="FUNERAL OF SIR JOSEPH
-COOK" />
+               <CardHeader style={styles.cardHeader} title="Sir Robert Menzies returns" />
                <CardText style={styles.cardText}>
-                  SYDNEY-, Friday.
-                  Government- and diplomatic representatives' were among the 500
-                  mourners at the State funeral of Sir
-                  Joseph Cook, former Prime Minister,'
-                  to-day.
-                  The Rev. W. Deane, Principal of
-                  the Methodist Ladies' College, Burwood, delivered the address at the
-                  Wesley Chapel. ',
-                  He said that Sir Joseph was an all
-                  Australian Lincoln, who,rose from a
-                  pit boy to be Prime Minister and set
-                  a magnificent example to all Australians.
+                  Sir Robert Menzies flew
+                  into Canberra from Mel-
+                  bourne yesterday to attend
+                  a conference of university
+                  administrators. The two-day
+                  conference, beginning to-
+                  day, will discuss the func-
+                  tions of university govern-
+                  ing bodies.
+                  Sir Robert, who is Chan-
+                  cellor of the University of
+                  Melbourne, was welcomed
+                  by Professor J. D. B. Miller
+                  professor of international
+                  relations at the ANU. He
+                  will stay at Government
+                  House.
+                  Sir Robert described his
+                  state of health as tolerable
+                  But I move carefully, and
+                  of course I get no sympathy
+                  Fix this textfor the way I look", he said.
                </CardText>
              </Card>
           </MuiThemeProvider>
@@ -98,4 +106,4 @@ COOK" />
   }
 }
 
-export default Cook
+export default Menzies

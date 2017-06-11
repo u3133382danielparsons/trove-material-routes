@@ -7,10 +7,9 @@ import MenuItem from 'material-ui/MenuItem'
 import { Link } from 'react-router-dom'
 import Subheader from 'material-ui/Subheader'
 import {Card, CardHeader, CardText} from 'material-ui/Card'
+import HoltWelcome from './images/holtWelcome.png'
 
-import CookFuneral from './images/cookFuneral.png'
-
-class Cook extends Component {
+class Holt extends Component {
 
   constructor(props) {
     super(props)
@@ -65,31 +64,39 @@ class Cook extends Component {
           </MuiThemeProvider>
 
           <MuiThemeProvider>
-            <Subheader>Prime Minister Joseph Cook</Subheader>
+            <Subheader>Prime Minister Harold Holt</Subheader>
           </MuiThemeProvider>
 
           <MuiThemeProvider>
-            <img src={CookFuneral} alt="Joseph Cook Funeral Article" />
+            <img src={HoltWelcome} alt="Sir Robert Menzies Article" />
           </MuiThemeProvider>
 
           <MuiThemeProvider>
             <Card>
               <CardHeader style={styles.cardHeader} title="" />
-               <CardHeader style={styles.cardHeader} title="FUNERAL OF SIR JOSEPH
-COOK" />
+               <CardHeader style={styles.cardHeader} title="Holt is welcome - Japan" />
                <CardText style={styles.cardText}>
-                  SYDNEY-, Friday.
-                  Government- and diplomatic representatives' were among the 500
-                  mourners at the State funeral of Sir
-                  Joseph Cook, former Prime Minister,'
-                  to-day.
-                  The Rev. W. Deane, Principal of
-                  the Methodist Ladies' College, Burwood, delivered the address at the
-                  Wesley Chapel. ',
-                  He said that Sir Joseph was an all
-                  Australian Lincoln, who,rose from a
-                  pit boy to be Prime Minister and set
-                  a magnificent example to all Australians.
+                  TOKYO, Friday (A A P
+                  Reuter). — A visit to Japan
+                  by the Australian Prime
+                  Minister, Mr Harold Holt,
+                  would be most welcome,
+                  the Japanese Foreign Minis
+                  try spokesman, Mr Kinya
+                  Niiseki, said last night.
+                  However, the only infor
+                  mation which the Japanese
+                  Government had seen had
+                  been Press speculation, he
+                  said.
+                  No details had been
+                  settled of the overseas tour
+                  which the Japanese Prime
+                  Minister, Mr Sato, was to
+                  make later this year.
+                  It would be after June,
+                  but where he would go had
+                  not been decided.
                </CardText>
              </Card>
           </MuiThemeProvider>
@@ -98,4 +105,4 @@ COOK" />
   }
 }
 
-export default Cook
+export default Holt

@@ -7,10 +7,9 @@ import MenuItem from 'material-ui/MenuItem'
 import { Link } from 'react-router-dom'
 import Subheader from 'material-ui/Subheader'
 import {Card, CardHeader, CardText} from 'material-ui/Card'
+import LyonsWish from './images/lyonsWish.png'
 
-import CookFuneral from './images/cookFuneral.png'
-
-class Cook extends Component {
+class Lyons extends Component {
 
   constructor(props) {
     super(props)
@@ -65,31 +64,32 @@ class Cook extends Component {
           </MuiThemeProvider>
 
           <MuiThemeProvider>
-            <Subheader>Prime Minister Joseph Cook</Subheader>
+            <Subheader>Prime Minister Joseph Lyons</Subheader>
           </MuiThemeProvider>
 
           <MuiThemeProvider>
-            <img src={CookFuneral} alt="Joseph Cook Funeral Article" />
+            <img src={LyonsWish} alt="Joseph Lyons Article" />
           </MuiThemeProvider>
 
           <MuiThemeProvider>
             <Card>
               <CardHeader style={styles.cardHeader} title="" />
-               <CardHeader style={styles.cardHeader} title="FUNERAL OF SIR JOSEPH
-COOK" />
+               <CardHeader style={styles.cardHeader} title="Lyons gets his wish" />
                <CardText style={styles.cardText}>
-                  SYDNEY-, Friday.
-                  Government- and diplomatic representatives' were among the 500
-                  mourners at the State funeral of Sir
-                  Joseph Cook, former Prime Minister,'
-                  to-day.
-                  The Rev. W. Deane, Principal of
-                  the Methodist Ladies' College, Burwood, delivered the address at the
-                  Wesley Chapel. ',
-                  He said that Sir Joseph was an all
-                  Australian Lincoln, who,rose from a
-                  pit boy to be Prime Minister and set
-                  a magnificent example to all Australians.
+                 MELBOURNE, Tuesday. — The only monument that Mr Joseph Lyons, former Prime
+                 Minister of Australia, ever wanted was a simple
+                 plaque. Last weekend, nearly 30 years after his
+                 death, he got it.
+                 His remains were shifted from the Our Lady
+                 of Lourdes Church in Devonport, Tasmania, to
+                 the Mersey Vale Memorial Park, three miles
+                 south of the city.
+                 The reburial was made at the request of his
+                 widow, Dame Enid Lyons. After his death in
+                 April, 1939, Mr Lyons was buried in the
+                 Catholic cemetery within a monumental sur
+                 round about 50ft wide.
+                 The plot to which his remains were transferred will comprise a small marker and garden.
                </CardText>
              </Card>
           </MuiThemeProvider>
@@ -98,4 +98,4 @@ COOK" />
   }
 }
 
-export default Cook
+export default Lyons

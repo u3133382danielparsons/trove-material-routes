@@ -7,10 +7,9 @@ import MenuItem from 'material-ui/MenuItem'
 import { Link } from 'react-router-dom'
 import Subheader from 'material-ui/Subheader'
 import {Card, CardHeader, CardText} from 'material-ui/Card'
+import GillardAsem from './images/gillardAsem.png'
 
-import CookFuneral from './images/cookFuneral.png'
-
-class Cook extends Component {
+class Gillard extends Component {
 
   constructor(props) {
     super(props)
@@ -65,31 +64,44 @@ class Cook extends Component {
           </MuiThemeProvider>
 
           <MuiThemeProvider>
-            <Subheader>Prime Minister Joseph Cook</Subheader>
+            <Subheader>Prime Minister Julia Gillard</Subheader>
           </MuiThemeProvider>
 
           <MuiThemeProvider>
-            <img src={CookFuneral} alt="Joseph Cook Funeral Article" />
+            <img src={GillardAsem} alt="Julia Gillard Article" />
           </MuiThemeProvider>
 
           <MuiThemeProvider>
             <Card>
               <CardHeader style={styles.cardHeader} title="" />
-               <CardHeader style={styles.cardHeader} title="FUNERAL OF SIR JOSEPH
-COOK" />
+               <CardHeader style={styles.cardHeader} title="ASEM 8 : Australia joins the Asia-Europe Meeting" />
                <CardText style={styles.cardText}>
-                  SYDNEY-, Friday.
-                  Government- and diplomatic representatives' were among the 500
-                  mourners at the State funeral of Sir
-                  Joseph Cook, former Prime Minister,'
-                  to-day.
-                  The Rev. W. Deane, Principal of
-                  the Methodist Ladies' College, Burwood, delivered the address at the
-                  Wesley Chapel. ',
-                  He said that Sir Joseph was an all
-                  Australian Lincoln, who,rose from a
-                  pit boy to be Prime Minister and set
-                  a magnificent example to all Australians.
+                  Following his meeting with Australian Prime
+                  Minister Julia Gillard in Brussels on 4 October,
+                  José Manuel Barroso, President of the European
+                  Commission, welcomed Prime Minister Gillard's
+                  proposal to develop further EU-Australia
+                  relations and Australia's entry into ASEM.
+                  "Prime Minister Gillard has made proposals to
+                  develop further the EU-Australia relationship.
+                  I welcome this initiative and I will examine
+                  those proposals in detail, consulting Member
+                  States. Let me tell you on my own behalf, on
+                  behalf of the European Commission, that we
+                  very much support the idea of giving more
+                  important expression to the relationship between
+                  Australia and the European Union. As partners
+                  in the G20, we have discussed financial and
+                  economic governance and the need to cooperate
+                  in multilateral fora. We also briefly discussed
+                  climate change, in advance of the meeting
+                  in Cancun. We agree that we have a common
+                  interest in strengthening our ability to deal with
+                  these challenges. We will continue to work with
+                  Australia on this comprehensive agenda. And
+                  I thank again Prime Minister Gillard for her
+                  partnership on these important matters." said
+                  Fix this textPresident Barroso.
                </CardText>
              </Card>
           </MuiThemeProvider>
@@ -98,4 +110,4 @@ COOK" />
   }
 }
 
-export default Cook
+export default Gillard

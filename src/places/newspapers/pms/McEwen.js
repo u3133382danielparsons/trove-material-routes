@@ -7,10 +7,9 @@ import MenuItem from 'material-ui/MenuItem'
 import { Link } from 'react-router-dom'
 import Subheader from 'material-ui/Subheader'
 import {Card, CardHeader, CardText} from 'material-ui/Card'
+import McEwenWest from './images/mcEwenWest.png'
 
-import CookFuneral from './images/cookFuneral.png'
-
-class Cook extends Component {
+class McEwen extends Component {
 
   constructor(props) {
     super(props)
@@ -65,31 +64,36 @@ class Cook extends Component {
           </MuiThemeProvider>
 
           <MuiThemeProvider>
-            <Subheader>Prime Minister Joseph Cook</Subheader>
+            <Subheader>Prime Minister Sir John McEwen</Subheader>
           </MuiThemeProvider>
 
           <MuiThemeProvider>
-            <img src={CookFuneral} alt="Joseph Cook Funeral Article" />
+            <img src={McEwenWest} alt="Sir Robert Menzies Article" />
           </MuiThemeProvider>
 
           <MuiThemeProvider>
             <Card>
               <CardHeader style={styles.cardHeader} title="" />
-               <CardHeader style={styles.cardHeader} title="FUNERAL OF SIR JOSEPH
-COOK" />
+               <CardHeader style={styles.cardHeader} title="MR. McEWEN
+GOING WEST" />
                <CardText style={styles.cardText}>
-                  SYDNEY-, Friday.
-                  Government- and diplomatic representatives' were among the 500
-                  mourners at the State funeral of Sir
-                  Joseph Cook, former Prime Minister,'
-                  to-day.
-                  The Rev. W. Deane, Principal of
-                  the Methodist Ladies' College, Burwood, delivered the address at the
-                  Wesley Chapel. ',
-                  He said that Sir Joseph was an all
-                  Australian Lincoln, who,rose from a
-                  pit boy to be Prime Minister and set
-                  a magnificent example to all Australians.
+                  The Acting Prime Minister
+                  Mr. McEwen, will make a
+                  special visit to Far West
+                  Queensland next week.
+                  On his trip Mr. McEwen
+                  will meet Far Western graz-
+                  iers and settlers and discuss
+                  rural problems with them. It
+                  is understood that Far West
+                  Queensland cattle transport,
+                  particularly as it affects the
+                  Channel Country, will form
+                  an important subject of dis-
+                  cussion.
+                  Mr. McEwen will fly from
+                  Canberra to Charleville on
+                  Friday.
                </CardText>
              </Card>
           </MuiThemeProvider>
@@ -98,4 +102,4 @@ COOK" />
   }
 }
 
-export default Cook
+export default McEwen
