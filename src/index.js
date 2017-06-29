@@ -12,7 +12,6 @@ import Tas from './places/Tas'
 import Act from './places/Act'
 import Nt from './places/Nt'
 import Nat from './places/Nat'
-import All from './places/All'
 import CanberraTimes from './places/newspapers/CanberraTimes'
 import Barton from './places/newspapers/pms/Barton'
 import Deakin from './places/newspapers/pms/Deakin'
@@ -66,7 +65,7 @@ ReactDOM.render(
         <Route path='/places/act' component={Act}/>
         <Route path='/places/nt' component={Nt}/>
         <Route path='/places/Nat' component={Nat}/>
-        <Route path='/places/all' component={All} />
+
         <Route path='/places/newspapers/canberraTimes' component={CanberraTimes}/>
         <Route path='/places/newspapers/canberraCollage' component={CanberraCollage}/>
         <Route path='/places/newspapers/canberraIllustrated' component={CanberraIllustrated}/>

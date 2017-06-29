@@ -22,6 +22,9 @@ class Nt extends Component {
           background: '#000000',
         }
       }
+
+      const allUrl = "https://trove-newspapers-repo.herokuapp.com";
+      
       return(
         <div>
           <MuiThemeProvider>
@@ -50,7 +53,7 @@ class Nt extends Component {
                 <MenuItem onTouchTap={this.handleClose}><Link to="/places/act" >A.C.T.</Link></MenuItem>
                 <MenuItem onTouchTap={this.handleClose}><Link to="/places/nt" >Northern Territory</Link></MenuItem>
                 <MenuItem onTouchTap={this.handleClose}><Link to="/places/nat" >National/International</Link></MenuItem>
-                <MenuItem onTouchTap={this.handleClose}><Link to="/places/all" >All Newspapers</Link></MenuItem>
+                <MenuItem onTouchTap={this.handleClose}><a href={allUrl} >All Newspapers</a></MenuItem>
               </Drawer>
           </MuiThemeProvider>
 
